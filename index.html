@@ -40,18 +40,21 @@
   <link rel="preload" as="image" href="./images/image7.gif">
 </head>
 <body class="gradient-background">
-  <main class="flex items-center justify-center h-screen">
-    <section class="flex flex-col items-center p-4">
+  <main class="flex items-center justify-center min-h-screen px-4 py-8">
+    <section class="flex flex-col items-center max-w-md w-full">
       <img
         id="imageDisplay"
         src="./images/image1.gif"
         alt="Cute kitten with flowers"
-        class="rounded-md h-[300px] object-cover"
+        class="rounded-md h-[220px] sm:h-[280px] md:h-[320px] w-full max-w-xs object-cover"
       />
-      <h1 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">
-        Will you be my Valentine?
+      <h1
+        id="valentineQuestion"
+        class="text-3xl sm:text-4xl font-bold italic text-[#bd1e59] my-4 text-center leading-snug"
+      >
+        Hi Saumya, will you be Maulik's valentine?
       </h1>
-      <div id="responseButtons" class="flex gap-4 pt-5 items-center">
+      <div id="responseButtons" class="flex flex-col sm:flex-row gap-4 pt-5 items-center justify-center w-full">
         <button
           id="yesButton"
           class="bounce inline-flex items-center justify-center whitespace-nowrap rounded-md text-xl font-medium cursor-pointer px-4 py-2 bg-green-500 text-white transition-all duration-300 ease-in-out hover:bg-green-400 min-h-12 min-w-[75px]"
